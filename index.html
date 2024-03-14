@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">welcome To WeatherInfo App</h1>
+    <div id="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button onclick="searchWeather()">Search</button>
+    </div>
+
+    <div class="card" id="weather-info">
+      <!-- Weather information will be displayed here -->
+
+      <div class="card-body">
+        <h2 class="card-title">Weather Overview</h2>
+        <p class="card-text location">City, Country</p>
+        <p class="card-text date-time">As of [Current Date and Time]</p>
+
+        <!-- Temperature Section -->
+        <div class="temperature">
+          <p class="card-text current-temp">25&deg;C</p>
+          <p class="card-text weather-des">Party Cloudy</p>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="add-info mt-3">
+          <p class="card-text humidity-info">Humidity: 60%</p>
+          <p class="card-text wind-speed-info">Wind-Speed: 25km/hr</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
